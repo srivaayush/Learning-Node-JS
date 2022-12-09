@@ -222,6 +222,7 @@ server.listen(3000);
 */
 
 // video 13 Blocking and non blocking code
+/*
 const fs = require('fs');
 
 const server = http.createServer((req, res) => {
@@ -269,5 +270,13 @@ const server = http.createServer((req, res) => {
   res.write('<body><h1> Hello!!!! </h1></body>');
   res.write('</html>');
 });
+
+server.listen(3000);
+*/
+
+// video 15 using node module systems
+
+const routes=require('./routes');
+const server = http.createServer(routes);
 
 server.listen(3000);
